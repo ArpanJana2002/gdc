@@ -1,0 +1,131 @@
+.sidebar {
+    margin-top: 10px;
+}
+
+.sidebar__btn button {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    border-radius: 40px; /* Rounded edges for better look */
+    padding: 5px 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth shadow effect on hover */
+}
+
+.sidebar__btn button:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Highlight hover */
+}
+
+.sidebar__btn button img {
+    width: 24px; /* Adjust the icon size */
+    height: 24px;
+    margin-right: 12px;
+}
+
+.sidebar__options {
+    margin-top: 10px;
+}
+
+.sidebar__option {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 0px 10px 10px 0px; /* Less dramatic border radius */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.sidebar__option:hover {
+    background-color: whitesmoke;
+}
+
+.sidebar__option span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+}
+
+.sidebar__option-active {
+    background-color: #e8f0fe; /* Active state background */
+}
+
+.sidebar__option-active span {
+    color: #1367d2; /* Active text color */
+}
+
+.sidebar__option-active svg {
+    color: #1367d2; /* Active icon color */
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.progress-bar-container span {
+    font-size: 14px; /* Adjust text size for progress details */
+    margin-top: 8px;
+    color: #555;
+}
+
+.modal-pop {
+    position: fixed; /* Ensures it stays centered even on scroll */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the modal perfectly */
+    background-color: #fff; /* Clean white background */
+    width: 90%; /* Makes it responsive on smaller screens */
+    max-width: 500px; /* Limits the width on larger screens */
+    padding: 20px; /* Adds more spacing for better aesthetics */
+    border-radius: 12px; /* Smooth rounded edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    z-index: 1000; /* Ensures it appears above other elements */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.modalHeading {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+}
+
+input.post_submit {
+    width: 100%; /* Ensures the button takes up the full width */
+    background-color: #2381fa; /* Sets a vibrant blue background */
+    padding: 10px 20px; /* Adds spacing for a comfortable click area */
+    color: #fff; /* Sets the text color to white */
+    text-transform: uppercase; /* Makes the text all uppercase */
+    letter-spacing: 5px; /* Adds space between letters for style */
+    font-size: 16px; /* Sets a readable font size */
+    border: none; /* Removes any default border */
+    outline: none; /* Removes the outline when focused */
+    border-radius: 5px; /* Rounds the corners for a modern look */
+    cursor: pointer; /* Changes the cursor to a pointer for better UX */
+    margin-top: 20px; /* Adds space above the button */
+    transition: background-color 0.3s ease; /* Adds a hover effect */
+}
+
+input.post_submit:hover {
+    background-color: #1a5fb3; /* Slightly darker shade on hover */
+}
+
+.uploading {
+    font-size: 16px;
+    color: #2381fa;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    animation: fadeIn 1.5s infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

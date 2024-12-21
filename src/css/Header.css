@@ -1,0 +1,59 @@
+.Header {
+    display: flex; /* Align items horizontally in a row */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between logo, search, and icons */
+    padding: 5px 20px;
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .header_logo {
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically centered */
+  }
+  
+  .header_logo img {
+    width: 40px;
+  }
+  
+  .header_logo span {
+    font-size: 24px; /* Increased font size for better visibility */
+    margin-left: 22px;
+    color: rgb(160, 144, 144);
+  }
+  
+  .header_search {
+    display: flex;
+    align-items: center; /* Aligns search icon and input field vertically centered */
+    width: 700px;
+    background-color: whitesmoke;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  .header_search input {
+    background-color: transparent; /* Fixed typo */
+    border: none; /* Removed duplicate declaration */
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .header_icon {
+    display: flex; /* Align all icons horizontally */
+    align-items: center; /* Vertically align icons */
+  }
+  
+  .header_icon span {
+    display: flex; /* Flexbox inside span for multiple icons */
+    align-items: center; /* Center icons vertically */
+    margin-left: 15px; /* Space between icons */
+  }
+  
+  .header_icon .MuiSvgIcon-root {
+    font-size: 24px; /* Set consistent size for icons */
+  }
+
+  svg.MuiSvgIcon-root {
+    margin: 0px 10px;
+  }
